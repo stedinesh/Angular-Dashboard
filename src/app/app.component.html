@@ -1,0 +1,90 @@
+<main>
+    <div class="container-fluid">
+        <div class="content">
+            <div class="row">
+
+                <h3 class="banner-con">Customer Details</h3>
+
+            </div>
+            <div class="searchText">
+                <input type=text [(ngModel)]="searchText" placeholder="Customer Id">
+                <button (click)="searchCustomer()"> Search </button>
+            </div>
+
+            <div class="row" *ngIf="isCustomerAvailable">
+                <div class="form-group col-sm-6 col-md-4 col-lg-3">
+                    <label for="product_type">Mobile Number
+                    </label>
+                    <input class="form-control" type="text" [(ngModel)]="customer.mobileNo">
+                </div>
+
+                <div class="form-group col-sm-6 col-md-4 col-lg-3">
+                    <label for="product_type">Address
+                    </label>
+                    <input class="form-control" type="text" [(ngModel)]="customer.address">
+                </div>
+
+                <div class="form-group col-sm-6 col-md-4 col-lg-3">
+                    <label for="product_type">City
+                    </label>
+                    <input class="form-control" type="text" [(ngModel)]="customer.city">
+                </div>
+
+                <div class="form-group col-sm-6 col-md-4 col-lg-3">
+                    <label for="product_type">Full Name
+                    </label>
+                    <input class="form-control" type="text" [(ngModel)]="customer.fullName">
+                </div>
+
+                <div class="form-group col-sm-6 col-md-4 col-lg-3">
+                    <label for="product_type">First Name
+                    </label>
+                    <input class="form-control" type="text" [(ngModel)]="customer.firstName">
+                </div>
+
+                <div class="form-group col-sm-6 col-md-4 col-lg-3">
+                    <label for="product_type">Middle Name
+                    </label>
+                    <input class="form-control" type="text" [(ngModel)]="customer.middleName">
+                </div>
+
+                <div class="form-group col-sm-6 col-md-4 col-lg-3">
+                    <label for="product_type">Last Name
+                    </label>
+                    <input class="form-control" type="text" [(ngModel)]="customer.lastName">
+                </div>
+
+                <div class="form-group col-sm-6 col-md-4 col-lg-3">
+                    <label for="product_type">Email
+                    </label>
+                    <input class="form-control" type="text" [(ngModel)]="customer.email">
+                </div>
+
+                <div class="form-group col-sm-6 col-md-4 col-lg-3">
+                    <label for="product_type">Nationality
+                    </label>
+                    <input class="form-control" type="text" [(ngModel)]="customer.nationality">
+                </div>
+
+                <div class="form-group col-sm-6 col-md-4 col-lg-3">
+                    <label for="product_type">Occupation
+                    </label>
+                    <input class="form-control" type="text" [(ngModel)]="customer.occupation">
+                </div>
+
+                <div class="form-group col-sm-6 col-md-4 col-lg-3">
+                    <label for="product_type">Religion
+                    </label>
+                    <input class="form-control" type="text" [(ngModel)]="customer.religion">
+                </div>
+
+                <div class="form-group col-sm-6 col-md-4 col-lg-3">
+                    <label for="product_type">Marital Status
+                    </label>
+                    <input class="form-control" type="text" [(ngModel)]="customer.maritalStatus">
+                </div>
+
+            </div>
+        </div>
+    </div>
+</main>
